@@ -248,3 +248,32 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+ .quiz-box {
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
+     max-width: 400px;
+     margin: auto;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .question {
+     font-size: 18px;
+     margin-bottom: 20px;
+ }
+
+ .option {
+     display: block;
+     margin: 10px 0;
+     padding: 10px;
+     background-color: #eee;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+     border-radius: 5px;
+ }
+
+ .feedback {
+     margin-top: 20px;
+     font-weight: bold;
+ }

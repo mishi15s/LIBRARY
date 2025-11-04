@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchid-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+            <h1>Orchid Library</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="#">Browse Books</a>
+                    <ul class="dropdown-content">
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="science.html">Sciene</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="quiz-box">
+        <div class="question">Who is the author of Harry Potter?</div>
+        <button class="option" onclick="checkanswer(this)">Tom Robinson</button>
+        <button class="option" onclick="checkanswer(this)">J.K.Rowling</button>
+        <button class="option" onclick="checkanswer(this)">Harry Joseph</button>
+        <button class="option" onclick="checkanswer(this)">Jane McCarthy</button>
+        <div class="feedback" id="feedback"></div>
+    </div>
+    <div class="quiz-box">
+        <div class="question">Who won the Booker Prize for the book'God of Small Things'?</div>
+        <button class="option" onclick="checkanswer2(this)">Arundhati Roy</button>
+        <button class="option" onclick="checkanswer2(this)">Amrita Pritam</button>
+        <button class="option" onclick="checkanswer2(this)">Bruce Betts</button>
+        <button class="option" onclick="checkanswer2(this)">Jane McCarthy</button>
+        <div class="feedback2" id="feedback2"></div>
+    </div>
+    <script>
+        const correct1="J.K.Rowling";
+        const correct2="Arundhati Roy"
+        function checkanswer(button)
+        {
+            if (button.textContent == correct1) 
+            {
+                feedback.textContent = "✅ Correct!"
+                feedback.style.backgroundColor = "green"
+            }
+            else{
+                 feedback.textContent = "❌ Wrong answer."
+                feedback.style.backgroundColor = "red"
+            }
+}
+    function checkanswer2(button) {
+        if (button.textContent == correct2) {
+            feedback2.textContent = "✅ Correct!"
+            feedback2.style.backgroundColor = "green"
+        }
+        else {
+            feedback2.textContent = "❌ Wrong answer."
+            feedback2.style.backgroundColor = "red"
+        }
+    }
+    </script>
+<footer>
+    <p>&copy; 2025 Orchid All rights reserved Made with ❤️ by Mishika
+        56238 85339
+    </p>
+</footer>
+</body>
+</html>
