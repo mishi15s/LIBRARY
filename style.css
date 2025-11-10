@@ -277,3 +277,40 @@ footer {
      margin-top: 20px;
      font-weight: bold;
  }
+ .founder-section {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 30px;
+ }
+ .founder-image {
+
+     flex: 0 0 250px;
+
+ }
+ .founder-image img {
+     width: 100%;
+     border-radius: 5px;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .founder-info {
+     flex: 1;
+     min-width: 300px;
+ }
+
+ .founder-info h3 {
+     color: #2c3e50;
+     margin-bottom: 0.5rem;
+ }
+
+ .founder-title {
+     color: #7f8c8d;
+     font-style: italic;
+     margin-bottom: 1rem;
+ }
